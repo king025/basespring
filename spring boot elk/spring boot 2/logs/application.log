@@ -1,0 +1,548 @@
+2022-12-14T16:58:26.880+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 28272 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T16:58:26.883+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T16:58:26.884+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T16:58:28.075+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T16:58:28.096+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T16:58:28.097+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T16:58:28.098+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T16:58:28.172+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T16:58:28.173+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1232 ms
+2022-12-14T16:58:28.418+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T16:58:28.421+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T16:58:28.437+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T16:58:28.449+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T16:58:28.505+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T16:58:28.565+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T16:58:28.581+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.341 seconds (JVM running for 2.766)
+2022-12-14T16:58:53.881+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T16:58:53.881+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T16:58:53.882+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-12-14T17:01:05.815+0800 INFO               [http-nio-8080-exec-10]        com.reviewer.elk.controller.ELKController - Inside Hello World Function
+2022-12-14T17:01:05.815+0800 INFO               [http-nio-8080-exec-10]        com.reviewer.elk.controller.ELKController - Response => Hello World! Wed Dec 14 17:01:05 PST 2022
+2022-12-14T17:01:08.414+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.controller.ELKController - Inside Hello World Function
+2022-12-14T17:01:08.414+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.controller.ELKController - Response => Hello World! Wed Dec 14 17:01:08 PST 2022
+2022-12-14T17:01:17.194+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Hello World Function
+2022-12-14T17:01:17.194+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Response => Hello World! Wed Dec 14 17:01:17 PST 2022
+2022-12-14T17:01:39.111+0800 INFO               [http-nio-8080-exec-5]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T17:01:39.111+0800 INFO               [http-nio-8080-exec-5]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T17:01:39.116+0800 ERROR              [http-nio-8080-exec-5]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T17:01:43.786+0800 INFO               [http-nio-8080-exec-6]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T17:01:43.786+0800 INFO               [http-nio-8080-exec-6]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T17:01:43.787+0800 ERROR              [http-nio-8080-exec-6]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T19:59:47.756+0800 INFO               [http-nio-8080-exec-6]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T19:59:47.764+0800 INFO               [http-nio-8080-exec-6]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T19:59:47.766+0800 ERROR              [http-nio-8080-exec-6]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:02:00.398+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 17808 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:02:00.400+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:02:00.400+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:02:01.343+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:02:01.364+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:02:01.365+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:02:01.365+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:02:01.432+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:02:01.432+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 977 ms
+2022-12-14T20:02:01.675+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:02:01.679+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:02:01.693+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:02:01.702+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:02:01.751+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:02:01.800+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:02:01.813+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 1.971 seconds (JVM running for 2.343)
+2022-12-14T20:03:03.835+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:03:03.836+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:03:03.836+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-12-14T20:03:03.860+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:03:03.860+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:03:03.864+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:04:18.653+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 22980 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:04:18.658+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:04:18.659+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:04:20.008+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:04:20.033+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:04:20.034+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:04:20.035+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:04:20.117+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:04:20.118+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1381 ms
+2022-12-14T20:04:20.408+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:04:20.412+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:04:20.442+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:04:20.469+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:04:20.551+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:04:20.630+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:04:20.649+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.561 seconds (JVM running for 3.069)
+2022-12-14T20:04:31.363+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:04:31.364+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:04:31.364+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-12-14T20:04:31.383+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:04:31.384+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:04:31.387+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:05:14.918+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 23280 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:05:14.921+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:05:14.921+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:05:16.352+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:05:16.372+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:05:16.375+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:05:16.375+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:05:16.460+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:05:16.460+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1451 ms
+2022-12-14T20:05:16.748+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:05:16.752+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:05:16.772+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:05:16.788+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:05:16.843+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:05:16.886+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:05:16.899+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.429 seconds (JVM running for 2.975)
+2022-12-14T20:05:33.416+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:05:33.416+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:05:33.417+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:05:33.445+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:05:33.446+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:05:33.450+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:06:50.594+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 4024 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:06:50.598+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:06:50.598+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:06:51.914+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:06:51.942+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:06:51.945+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:06:51.945+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:06:52.077+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:06:52.077+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1414 ms
+2022-12-14T20:06:52.530+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:06:52.536+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:06:52.555+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:06:52.573+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:06:52.633+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:06:52.688+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:06:52.702+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.864 seconds (JVM running for 3.345)
+2022-12-14T20:07:14.354+0800 INFO               [http-nio-8080-exec-1]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:07:14.355+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:07:14.356+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:07:14.403+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:07:14.403+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:07:14.408+0800 ERROR              [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:08:01.669+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 8056 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:08:01.672+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:08:01.672+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:08:02.961+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:08:02.978+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:08:02.978+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:08:02.979+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:08:03.046+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:08:03.046+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1321 ms
+2022-12-14T20:08:03.315+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:08:03.319+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:08:03.332+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:08:03.343+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:08:03.390+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:08:03.436+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:08:03.446+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.272 seconds (JVM running for 2.758)
+2022-12-14T20:08:18.923+0800 INFO               [http-nio-8080-exec-1]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:08:18.923+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:08:18.925+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-14T20:08:18.950+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:08:18.952+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:08:18.955+0800 ERROR              [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:08:59.396+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 25972 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:08:59.399+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:08:59.399+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:09:00.531+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:09:00.551+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:09:00.552+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:09:00.554+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:09:00.634+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:09:00.635+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1137 ms
+2022-12-14T20:09:00.916+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:09:00.920+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:09:00.934+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:09:00.946+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:09:01.015+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:09:01.100+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:09:01.117+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.287 seconds (JVM running for 2.906)
+2022-12-14T20:09:05.588+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:09:05.589+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:09:05.590+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:09:05.616+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:09:05.617+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:09:05.622+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:11:46.971+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 16200 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:11:46.975+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:11:46.975+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:11:48.290+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:11:48.311+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:11:48.312+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:11:48.314+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:11:48.396+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:11:48.397+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1355 ms
+2022-12-14T20:11:48.707+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:11:48.712+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:11:48.730+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:11:48.743+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:11:48.796+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:11:48.849+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:11:48.859+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.695 seconds (JVM running for 3.205)
+2022-12-14T20:12:20.897+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:12:20.898+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:12:20.899+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:12:20.918+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:12:20.918+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:12:20.921+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:17:44.729+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 25632 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:17:44.731+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:17:44.732+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:17:45.923+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:17:45.954+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:17:45.955+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:17:45.955+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:17:46.054+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:17:46.054+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1271 ms
+2022-12-14T20:17:46.309+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:17:46.312+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:17:46.325+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:17:46.334+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:17:46.382+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:17:46.439+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:17:46.453+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.16 seconds (JVM running for 2.466)
+2022-12-14T20:18:07.903+0800 INFO               [http-nio-8080-exec-1]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:18:07.904+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:18:07.906+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:18:07.937+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:18:07.937+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:18:07.944+0800 ERROR              [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:18:43.462+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 14116 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:18:43.465+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:18:43.466+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:18:44.777+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:18:44.798+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:18:44.799+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:18:44.802+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:18:44.875+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:18:44.875+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1346 ms
+2022-12-14T20:18:45.107+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:18:45.110+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:18:45.124+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:18:45.136+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:18:45.182+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:18:45.236+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:18:45.253+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.368 seconds (JVM running for 2.826)
+2022-12-14T20:18:49.790+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:18:49.791+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:18:49.793+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-14T20:18:49.826+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:18:49.826+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:18:49.830+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:19:35.181+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 24572 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:19:35.185+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:19:35.185+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:19:36.625+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:19:36.651+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:19:36.652+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:19:36.652+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:19:36.742+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:19:36.744+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1498 ms
+2022-12-14T20:19:37.068+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:19:37.073+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:19:37.088+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:19:37.102+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:19:37.161+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:19:37.211+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:19:37.225+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.525 seconds (JVM running for 2.84)
+2022-12-14T20:19:56.695+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:19:56.696+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:19:56.697+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:19:56.719+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:19:56.720+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:19:56.725+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:23:33.277+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 7892 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:23:33.280+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:23:33.280+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:23:34.218+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:23:34.239+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:23:34.240+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:23:34.241+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:23:34.304+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:23:34.304+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 946 ms
+2022-12-14T20:23:34.526+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:23:34.530+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:23:34.541+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:23:34.554+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:23:34.597+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:23:34.645+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:23:34.653+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 1.792 seconds (JVM running for 2.109)
+2022-12-14T20:23:45.122+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:23:45.123+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:23:45.124+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:23:45.150+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:23:45.150+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:23:45.154+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:23:47.021+0800 INFO               [http-nio-8080-exec-3]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:23:47.021+0800 INFO               [http-nio-8080-exec-3]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:23:47.022+0800 ERROR              [http-nio-8080-exec-3]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:24:05.846+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 29468 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:24:05.848+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:24:05.848+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:24:06.830+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:24:06.853+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:24:06.854+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:24:06.854+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:24:06.929+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:24:06.929+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1039 ms
+2022-12-14T20:24:07.173+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:24:07.176+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:24:07.188+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:24:07.199+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:24:07.254+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:24:07.303+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:24:07.317+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 1.849 seconds (JVM running for 2.13)
+2022-12-14T20:24:21.174+0800 INFO               [http-nio-8080-exec-4]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:24:21.175+0800 INFO               [http-nio-8080-exec-4]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:24:21.178+0800 INFO               [http-nio-8080-exec-4]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-12-14T20:24:21.201+0800 INFO               [http-nio-8080-exec-4]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:24:21.201+0800 INFO               [http-nio-8080-exec-4]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:24:21.203+0800 ERROR              [http-nio-8080-exec-4]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:24:54.857+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 14600 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:24:54.860+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:24:54.861+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:24:56.070+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:24:56.086+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:24:56.086+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:24:56.086+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:24:56.145+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:24:56.145+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1141 ms
+2022-12-14T20:24:56.411+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:24:56.415+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:24:56.432+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:24:56.448+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:24:56.495+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:24:56.533+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:24:56.547+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.215 seconds (JVM running for 2.577)
+2022-12-14T20:25:03.374+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:25:03.375+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:25:03.377+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:25:03.412+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:25:03.413+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:25:03.419+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:25:24.337+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 25776 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:25:24.340+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:25:24.340+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:25:25.676+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:25:25.694+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:25:25.694+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:25:25.695+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:25:25.759+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:25:25.760+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1354 ms
+2022-12-14T20:25:26.148+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:25:26.153+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:25:26.170+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:25:26.188+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:25:26.248+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:25:26.293+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:25:26.306+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.397 seconds (JVM running for 2.771)
+2022-12-14T20:25:31.647+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:25:31.648+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:25:31.649+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-12-14T20:25:31.671+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:25:31.672+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:25:31.677+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:29:35.499+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 10324 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:29:35.505+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:29:35.505+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:29:36.581+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:29:36.600+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:29:36.600+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:29:36.600+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:29:36.668+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:29:36.668+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1097 ms
+2022-12-14T20:29:36.947+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:29:36.952+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:29:36.967+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:29:36.982+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:29:37.051+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:29:37.202+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:29:37.224+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.405 seconds (JVM running for 2.963)
+2022-12-14T20:29:41.713+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:29:41.713+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:29:41.715+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:29:41.747+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:29:41.747+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:29:41.754+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:32:12.268+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 2700 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:32:12.275+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:32:12.276+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:32:13.578+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:32:13.605+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:32:13.606+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:32:13.607+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:32:13.697+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:32:13.697+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1313 ms
+2022-12-14T20:32:14.012+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:32:14.018+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:32:14.038+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:32:14.051+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:32:14.101+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:32:14.152+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:32:14.164+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.468 seconds (JVM running for 2.95)
+2022-12-14T20:33:34.417+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:33:34.417+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:33:34.419+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-12-14T20:33:34.453+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:33:34.454+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:33:34.458+0800 ERROR              [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:36:45.160+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 25384 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:36:45.163+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:36:45.163+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:36:46.441+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:36:46.468+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:36:46.471+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:36:46.471+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:36:46.567+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:36:46.567+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1333 ms
+2022-12-14T20:36:46.847+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/Food-Details]}: foodDetails()
+	{GET [/api/hello]}: helloWorld()
+2022-12-14T20:36:46.851+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:36:46.864+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:36:46.878+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:36:46.924+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:36:46.976+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:36:46.985+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.428 seconds (JVM running for 3.07)
+2022-12-14T20:37:11.862+0800 INFO               [http-nio-8080-exec-1]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:37:11.862+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:37:11.863+0800 INFO               [http-nio-8080-exec-1]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:37:11.882+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:37:11.882+0800 INFO               [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:37:11.885+0800 ERROR              [http-nio-8080-exec-1]         com.reviewer.elk.service.ELKServiceTest - Error occurred in reading JSON file
+2022-12-14T20:40:18.167+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Starting ElkApplication using Java 17.0.5 on DESKTOP-J66R0P6 with PID 30464 (C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2\target\classes started by BPI_User in C:\Users\BPI_User\OneDrive\Documents\PROJECTS\BPI\Reviewer\emy\spring boot elk\spring boot 2)
+2022-12-14T20:40:18.171+0800 DEBUG              [main]                         com.reviewer.elk.ElkApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-12-14T20:40:18.171+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - No active profile set, falling back to default profiles: default
+2022-12-14T20:40:19.392+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-14T20:40:19.410+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:40:19.410+0800 INFO               [main]                         org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-14T20:40:19.412+0800 INFO               [main]                         org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-14T20:40:19.475+0800 INFO               [main]                         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-14T20:40:19.476+0800 INFO               [main]                         org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1236 ms
+2022-12-14T20:40:19.715+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.r.e.c.ELKController:
+	{GET [/api/hello]}: helloWorld()
+	{GET [/api/Food-Details]}: foodDetails()
+2022-12-14T20:40:19.719+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-14T20:40:19.735+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-14T20:40:19.749+0800 DEBUG              [main]                         _org.springframework.web.servlet.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2022-12-14T20:40:19.834+0800 INFO               [main]                         org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-14T20:40:19.896+0800 INFO               [main]                         org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-14T20:40:19.909+0800 INFO               [main]                         com.reviewer.elk.ElkApplication - Started ElkApplication in 2.29 seconds (JVM running for 2.699)
+2022-12-14T20:40:31.890+0800 INFO               [http-nio-8080-exec-2]         org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-14T20:40:31.890+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-14T20:40:31.891+0800 INFO               [http-nio-8080-exec-2]         org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-12-14T20:40:31.909+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:40:31.909+0800 INFO               [http-nio-8080-exec-2]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...
+2022-12-14T20:53:03.526+0800 INFO               [http-nio-8080-exec-4]         com.reviewer.elk.controller.ELKController - Inside Food Detail Function
+2022-12-14T20:53:03.533+0800 INFO               [http-nio-8080-exec-4]         com.reviewer.elk.service.ELKServiceTest - Fetching ALL food details...

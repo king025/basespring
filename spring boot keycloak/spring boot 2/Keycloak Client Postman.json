@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "414d6044-8322-687c-8371-bfb0d7840e6d",
+      "name": "RMS BaseMicro",
+      "timestamp": 1678343550751,
+      "order": [
+        "830ca173-a340-7098-a40f-eddac3c52151",
+        "733980f3-9e58-a8f5-a6ab-a4c33671594e",
+        "1a97cc78-5b05-03b9-bf19-ef3bcc4e90b9",
+        "00b10a49-d483-35fa-ec8e-ff9b2a9c12ec"
+      ],
+      "requests": [
+        {
+          "collectionId": "414d6044-8322-687c-8371-bfb0d7840e6d",
+          "id": "00b10a49-d483-35fa-ec8e-ff9b2a9c12ec",
+          "name": "USER OAuth2 Client",
+          "description": "",
+          "url": "http://localhost:6061/security/user",
+          "method": "GET",
+          "headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJKNHlQRHJaY1M5Q3h5Q091ZDVrMU02a3pMdDhBVmpuRThWcVhHUlZSOEJBIn0.eyJleHAiOjE2Nzg1NTAwMDcsImlhdCI6MTY3ODU0OTcwNywianRpIjoiM2RkZDRiMWEtZmIxNy00MTM3LWI0MGEtODE1NTViODlhNGFhIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MDYwL2F1dGgvcmVhbG1zL3Jtcy1yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3YWVmNzE1MC0wMTNhLTRkMjItYjM1OC1jM2VjNjI1NWUwMDQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJSTVMiLCJzZXNzaW9uX3N0YXRlIjoiNjAwNTZmODItMjU5Ni00MDNiLWIyMzItODAyODUwMGNjNTQ5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiUk1TIFVzZXIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJSTVMiOnsicm9sZXMiOlsiVXNlciJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJSb2dlciBTYW1zb24iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJybXMtdXNlciIsImdpdmVuX25hbWUiOiJSb2dlciIsImZhbWlseV9uYW1lIjoiU2Ftc29uIiwiZW1haWwiOiJyb2dlci5zYW1zb25AZ2xvYmFsLm50dCJ9.bmWMxa80MzgYCUiBxHOG757VgR3pzlo4fifKpnPwdn7AUX0-fcq718rJ-hMyDQV4g7PsPCBpWjxu6mlIxLAKDFDrvybu5qfCA-BFUct58mvXGTRSeax2aEvRfdhpy0h4x0Hi8UjE1yuuvWm9pRg6pP_xSj1BWJsvN4sBVxrUdyErRPnlIwWdu6c1AJj7_RWm0oJKBtKbp-4dCTP6yh-t4_wKGbmi4CPP-qkMhU02XWhDhUqAfM3riqMdA2l-D8KbNDYcGmmeudl9-_v01y9wua2SAgXdoPhX_sJB-TmhaQTTTf0RGGJcAeIbXQ-l5Q8n3Ps_ktRAiQsPxEspth2QSA\n",
+          "data": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "rms-user",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "text"
+            }
+          ],
+          "dataMode": "urlencoded",
+          "timestamp": 0,
+          "responses": [],
+          "version": 2
+        },
+        {
+          "collectionId": "414d6044-8322-687c-8371-bfb0d7840e6d",
+          "id": "1a97cc78-5b05-03b9-bf19-ef3bcc4e90b9",
+          "name": "USER Access Token",
+          "description": "",
+          "url": "http://localhost:6060/auth/realms/rms-realm/protocol/openid-connect/token",
+          "method": "POST",
+          "headers": "Authorization: Basic Uk1TOmUzNDQ4MzljLWViYTAtNGIwNi1iZThlLTUwMWIxMzczZjJjNg==\n",
+          "data": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "rms-user",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "text"
+            }
+          ],
+          "dataMode": "urlencoded",
+          "timestamp": 0,
+          "responses": [],
+          "version": 2
+        },
+        {
+          "collectionId": "414d6044-8322-687c-8371-bfb0d7840e6d",
+          "id": "733980f3-9e58-a8f5-a6ab-a4c33671594e",
+          "name": "ADMIN OAuth2 Client",
+          "description": "",
+          "url": "http://localhost:6061/security/admin",
+          "method": "GET",
+          "headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJKNHlQRHJaY1M5Q3h5Q091ZDVrMU02a3pMdDhBVmpuRThWcVhHUlZSOEJBIn0.eyJleHAiOjE2Nzg1NTAwOTcsImlhdCI6MTY3ODU0OTc5NywianRpIjoiNzJkMjMxYWItZTBjOC00ODdkLTgxYzgtMjExMjA3YTAxMmEwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MDYwL2F1dGgvcmVhbG1zL3Jtcy1yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI3MTZkZjY0OS1kZmVkLTQ2YTItYjQ4YS0xZTQ0NjdmZGUzNWEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJSTVMiLCJzZXNzaW9uX3N0YXRlIjoiZmEzM2UyYjctYTJmOC00ZDdkLWFkMGEtMTc5MDYwZjA0YTgxIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJSTVMgQWRtaW5pc3RyYXRvciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJSTVMiOnsicm9sZXMiOlsiQWRtaW5pc3RyYXRvciJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJSb2dlbGlvIFNhbXNvbiIsInByZWZlcnJlZF91c2VybmFtZSI6InJtcy1hZG1pbiIsImdpdmVuX25hbWUiOiJSb2dlbGlvIiwiZmFtaWx5X25hbWUiOiJTYW1zb24iLCJlbWFpbCI6InJvZ2VsaW8uc2Ftc29uQGdtYWlsLmNvbSJ9.d2ELcjup5lqFEXVGXs6aeGjR0k_TByH8DWuj9MEvmfof_yS4gxH5Z-pM2kC84mfuXFvCY9-p4cKLwlHUF9NHP3WEU9pZq7dxoM4g7UyUN2XhLxFb3yobDfquPgi1F0R65_jTqQRKh73WKtl7IpRyyJkIC-L47F9CvUg-oI7u2Cpl2shSqoVaLRGPD5AK84RInxOgkXa-VaY4HOy1lYbVFJVNx9iKZ8iN8vqKD08yBB1APh3iZ4VhChKOl0WByvI_w8qvlX-3KM-ma9ziA6uX3vsaVGueSWw67zLo81EaZzd_Z9y4EgdF7ZbzbBm4CbpI5QazbuS90ZZK01scgRTU0g\n",
+          "data": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "rms-admin",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "text"
+            }
+          ],
+          "dataMode": "urlencoded",
+          "timestamp": 0,
+          "responses": [],
+          "version": 2
+        },
+        {
+          "collectionId": "414d6044-8322-687c-8371-bfb0d7840e6d",
+          "id": "830ca173-a340-7098-a40f-eddac3c52151",
+          "name": "ADMIN Access Token",
+          "description": "",
+          "url": "http://localhost:6060/auth/realms/rms-realm/protocol/openid-connect/token",
+          "method": "POST",
+          "headers": "Authorization: Basic Uk1TOmUzNDQ4MzljLWViYTAtNGIwNi1iZThlLTUwMWIxMzczZjJjNg==\n",
+          "data": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "rms-admin",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "password123",
+              "type": "text"
+            }
+          ],
+          "dataMode": "urlencoded",
+          "timestamp": 0,
+          "version": 2,
+          "time": 1678548515485
+        }
+      ]
+    }
+  ],
+  "environments": [],
+  "headerPresets": [],
+  "globals": []
+}

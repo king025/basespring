@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "53fdb587-bdd5-4117-af49-f783364b0ab6",
+		"name": "SpringBatch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EnableBatch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/batch/enable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"batch",
+						"enable"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

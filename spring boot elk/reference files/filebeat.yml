@@ -1,0 +1,22 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    fields:
+        type: "service_logs"
+    paths:
+        - C:/ELK/logs/application.log  # Make sure to provide the absolute path of the file
+  - type: log
+    enabled: true
+    fields:
+        type: "outbound_logs"
+    paths:
+        - C:/ELK/logs/application-outbound.log  # Absolute path of application-outbound.log file
+
+setup.ilm.enabled: false
+setup.template.name: "myapp-%{[fields.type]:other}"
+setup.template.pattern: "myapp-%{[fields.type]:other}-*"
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+  protocol: "http"
+  index: "myapp-%{[fields.type]:other}-%{+yyyy.MM.dd}"

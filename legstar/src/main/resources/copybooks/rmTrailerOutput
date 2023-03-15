@@ -1,0 +1,28 @@
+       01 RMMSCSRL-OUT.                                       
+	      05 RMMSCSRL-CTR                           PIC 9(03).
+	      05 RMMSCSRL-OUT-FROM-CUST-NBR             PIC X(14).
+	      05 RMMSCSRL-OUT-NEXT-ITEM-FLAG            PIC X(01).
+	      05 RMMSCSRL-OUT-NEXT-ITEM-KEY             PIC X(55).
+	      05 RMMSCSRL-OUT-RETURN-CODE               PIC X(02).
+	      05 RMMSCSRL-OUT-RETURN-MSG                PIC X(40).
+	      05 RMMSCSRL-OUT-REL-MAST.
+             10 RMMSCSRL-OUT-REST-OF-REL-KEY.                 
+                15 RMMSCSRL-OUT-TO-ENT-CD           PIC X(02).
+                15 RMMSCSRL-OUT-TO-APPL-CD          PIC X(02).
+                15 RMMSCSRL-OUT-REL-CD.                       
+                   20 RMMSCSRL-OUT-FROM-REL-CD      PIC X(03).
+                   20 RMMSCSRL-OUT-TO-REL-CD        PIC X(03).
+                15 RMMSCSRL-OUT-CUST-CTL1           PIC X(04).
+                15 RMMSCSRL-OUT-CUST-CTL2           PIC X(04).
+                15 RMMSCSRL-OUT-CUST-CTL3           PIC X(04).
+                15 RMMSCSRL-OUT-CUST-CTL4           PIC X(04).
+                15 RMMSCSRL-OUT-TO-ACCT-KEY         PIC X(27).
+             10 RMMSCSRL-OUT-ADDL-REL-INFO.                   
+                15 RMMSCSRL-OUT-APPL-ID             PIC X(02).
+                15 RMMSCSRL-OUT-LEGAL-TITL-POS      PIC X(01).
+                15 RMMSCSRL-OUT-INTERNET-BK-INFO.             
+                   20 RMMSCSRL-OUT-IB-ACCT-IND      PIC X(01).
+                   20 RMMSCSRL-OUT-IB-BILL-PAY-IND  PIC X(01).
+                   20 RMMSCSRL-OUT-IB-XFER-FROM-IND PIC X(01).
+                   20 RMMSCSRL-OUT-IB-XFER-TO-IND   PIC X(01).
+                   20 RMMSCSRL-OUT-IB-DOWNLOAD      PIC X(01).

@@ -1,0 +1,29 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+#
+# More information on profiles: https://www.jhipster.tech/profiles/
+# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+server:
+  port: 8081
+
+app:
+  name: Springboot 3 and Swagger2 Application (PROD environment)
+  api:
+    title: Spring Boot Basic APIs
+    version: 1.0.0
+    description: Mini application to show springboot 3 and Spring Doc2
+    externalDocDescription: Springboot 3 and SpringDoc 2 Github
+    externalUrl: https://github.com/marksaballe/emy
+
+spring-doc:
+  swagger-ui:
+    enabled: false
