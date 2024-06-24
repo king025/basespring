@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 
-public class OtherFeignSslConfiguration {
+public class FeignSslConfiguration {
 	@Bean
 	public Feign.Builder feignBuilder() {
 		return Feign.builder().client(new Client.Default(getSSLSocketFactory(), new NoopHostnameVerifier()));
