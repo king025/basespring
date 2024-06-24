@@ -35,8 +35,8 @@ class DemoApplicationTests {
 	void sampTest() throws Exception {
 		when(sampClient.postCountryIso(any(CountryName.class))).thenReturn(countryNameResponse);
 		String json = TestUtil.asJsonString(TestUtil.user1());
-		RequestBuilder req = MockMvcRequestBuilders.post("samp/soap")
-				.servletPath("samp/soap").content(json)
+		RequestBuilder req = MockMvcRequestBuilders.post("/samp/soap")
+				.servletPath("/samp/soap").content(json)
 				.contentType(MediaType.APPLICATION_JSON);
 		mockMvc.perform(req).andExpect(status().isOk()).andDo(print());
 	}
